@@ -1,2 +1,2 @@
 # OpenAi-Chatbot
-Just a simple charbot that uses the OpenAi API
+A simple chatbot built using the OpenAI API. This project demonstrates basic interaction with OpenAI's language model, allowing users to have conversations directly through a terminal interface. Upstash.
