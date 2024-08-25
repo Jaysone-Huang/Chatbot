@@ -1,4 +1,6 @@
+import ChatWrapper from '@/components/ChatWrapper';
 import { ragChat } from '@/lib/rag-chat'
+import { redis } from '@/lib/redis';
 import React from 'react'
 
 
@@ -17,16 +19,20 @@ const reconstructUrl = ({url}:{ url:string[] }) => {
 
 const page = async ({ params }: PageProps) => {
   const reconstUrl = reconstructUrl({url: params.url as string[]})
-  console.log(params)
-  await ragChat.context.add({
-    type: "html",
-    source: reconstUrl,
-    config: { chunkOverlap: 50, chunkSize: 200},
-  });
-  return (
-    <div className='bg-primary text-accent'>
-    </div>
-  )
+  const condition = await redis.sismember("indexed-urls", reconstUrl)
+  console.log(condition);
+
+  const sessionId = 'mock-session';
+
+  if (!condition) {
+    await ragChat.context.add({
+      type: "html",
+      source: reconstUrl,
+      config: { chunkOverlap: 50, chunkSize: 200},
+    });
+    await redis.sadd("indexed-urls", reconstUrl);
+  }
+return <ChatWrapper sessionId={sessionId}/>
 }
 
 export default page;
