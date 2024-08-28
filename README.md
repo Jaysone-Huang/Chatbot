@@ -16,8 +16,8 @@ A simple chatbot built using the RagChat API. This project demonstrates basic in
 1. Clone the repository.
 2. Set up your RagChat and Upstash API keys.
 3. npm install all dependencies
-4. npm run dev
-5. ENJOY!
+4. npm run dev (side note, to feed information to the AI, it requires you to append the information link into the url ex. http://localhost:3000/https:/en.wikipedia.org/wiki/Alien:_Romulus)
+6. ENJOY!
 
 ### Preview of My App:
 
