@@ -17,4 +17,9 @@ A simple chatbot built using the RagChat API. This project demonstrates basic in
 2. Set up your RagChat and Upstash API keys.
 3. Run the chatbot through your terminal and start chatting!
 
+### Preview of My App:
+
+![Alt Text](./chatbot/public/emptyChat.JPG)
+![Alt Text](./chatbot/public/chat.JPG)
+![Alt Text](./chatbot/public/chatSkinny.JPG)
 
