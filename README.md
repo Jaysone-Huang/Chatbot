@@ -21,7 +21,10 @@ A simple chatbot built using the RagChat API. This project demonstrates basic in
 
 ### Preview of My App:
 
-![Alt Text](./chatbot/public/emptyChat.JPG)
-![Alt Text](./chatbot/public/chat.JPG)
-![Alt Text](./chatbot/public/chatSkinny.JPG)
+<p align="center">
+  <img src="./chatbot/public/emptyChat.JPG" alt="Empty Chat" width="150"/>
+  <img src="./chatbot/public/chat.JPG" alt="Chat" width="150"/>
+  <img src="./chatbot/public/chatSkinny.JPG" alt="Chat Skinny" width="150"/>
+</p>
+
 
