@@ -15,7 +15,9 @@ A simple chatbot built using the RagChat API. This project demonstrates basic in
 ### Getting Started:
 1. Clone the repository.
 2. Set up your RagChat and Upstash API keys.
-3. Run the chatbot through your terminal and start chatting!
+3. npm install all dependencies
+4. npm run dev
+5. ENJOY!
 
 ### Preview of My App:
 
