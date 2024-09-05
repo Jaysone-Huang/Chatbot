@@ -10,7 +10,6 @@ A simple chatbot built using the RagChat API. This project demonstrates basic in
 ### How It Works:
 1. **Initialization**: The chatbot initializes by connecting to the RagChat API and setting up a Redis instance with Upstash to store session data.
 2. **Conversation Handling**: User inputs are sent to the RagChat API, and responses are generated and stored in Upstash, preserving the context for ongoing conversations.
-3. **Scalability**: With Upstash, the chatbot is designed to handle multiple concurrent users, making it suitable for both small-scale and large-scale deployments.
 
 ### Getting Started:
 1. Clone the repository.
